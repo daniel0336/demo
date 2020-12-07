@@ -1,0 +1,83 @@
+h1 {
+    text-align: center;
+  color: red;
+  text-shadow: 4px 4px 10px rebeccapurple;
+}
+.title{color: rgb(175, 36, 21);}
+#italic{color: tomato;}
+nav{
+    background-color: aquamarine;
+    text-align: center;
+}
+.nav-wrapper{
+   background-color: blue; 
+}
+a{
+    text-decoration-line: none;
+}
+nav ul{list-style: none;}
+nav li{
+    display: inline-block;
+    padding: 30px;
+}
+.container{border: 20px dashed blue;
+margin: 50px 5px 2px 60px  ;
+padding: 30px 5px 30px 10px ;
+}
+.box{
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    background: rgb(51, 151, 26);
+    margin: 10px 10px;
+}
+
+@keyframes faceMe {
+0%{
+opacity: 1;
+}
+100% {opacity: 0;}
+}
+.circleimg{
+    border-radius: 30%;
+}
+#box1{
+    animation-name: faceMe;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotation {
+    0%{transform: rotate(90deg);}
+    50%{transform: rotate(180deg);}
+    100%{transform: rotate(360deg);}
+}
+#box2{
+    animation-name:rotation;
+    animation-duration: 2s;
+    animation-iteration-count: 4s;
+    animation-timing-function: ease-in-out;
+    border-radius: 10%;
+    background-image: radial-gradient(circle,purple,orange,yellow,pink,purple);
+}
+
+#box6{
+    top: 10px;
+    left: 20px;
+    position: relative;
+}
+
+
+img{
+    box-shadow: 20px 5px 3px rgb(199, 12, 12) ;
+}
+.flex{
+    border: 3px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+
+}
